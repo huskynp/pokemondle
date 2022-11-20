@@ -57,14 +57,14 @@ table{
     border: 1px solid black;
     border-radius: 10px;
     border-collapse: collapse;
-    width: clamp(50em, 50em, 75vw);
+    width: clamp(75vw, 50em, 75vw);
     height:10vh;
     overflow:auto;
 }
 
 tr{
     height:10px;
-    width: clamp(50em, 50em, 75vw);
+    width: clamp(75vw, 50em, 75vw);
     border-bottom:1px solid black;
     font-size:1rem;
 }
