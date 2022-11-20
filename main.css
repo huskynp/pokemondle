@@ -46,7 +46,7 @@ body{
 
 input{
     margin-top:25vh;
-    width:50vh;
+    width:50vw;
     font-size:larger;
 }
 
@@ -58,13 +58,13 @@ table{
     border-radius: 10px;
     border-collapse: collapse;
     width: clamp(50em, 50em, 75vw);
-    max-width:75vw;
     height:10vh;
     overflow:auto;
 }
 
 tr{
     height:10px;
+    width: clamp(50em, 50em, 75vw);
     border-bottom:1px solid black;
     font-size:1rem;
 }
