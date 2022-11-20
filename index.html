@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Pokémondle</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">POKEMONDLE</h1>
+        <img id="hint" oncontextmenu="return false;" />
+        <h1 id="q">?</h1>
+        <input id="guesser" placeholder="loading..." disabled/>
+        <table>
+        </table>
+        <p><span class="correct">■ Correct</span>&emsp;&emsp;<span class="incorrect">■ Incorrect</span>&emsp;&emsp;<span class="almost">■ Partial/Same Evo</span></p>
+    </div>
+    <div id="winDialog" title="You Won!"></div>
+    <div id="help" title="How Pokemondle Works">Your goal is to guess the Pokemon in 6 tries.<br/>Each guess, you are given information about the pokemon you guessed and whether it is right or not. <br/><br/>Good luck!</div>
+    <button class="link another">Try another?</button>
+    <button class="link help">Help</button>
+    <a target="_blank" rel="noopener noreferrer" class="link author" href="https://github.com/huskynp">huskynp</a>
+    <script src="main.js"></script>
+</body>
+</html>

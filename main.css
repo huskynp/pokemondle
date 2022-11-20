@@ -1,0 +1,159 @@
+body{
+    font-family:Arial;
+}
+
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    width:50vw;
+    height:70vh;
+    margin:auto;
+    margin-top:10vh;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:3vh;
+}
+
+.title{
+    position:absolute;
+    top:0px;
+}
+
+#hint{
+    position:absolute;
+    top:13vh;
+    width:20vh;
+    filter: brightness(0);
+    opacity:.8;
+}
+
+#hint.show{
+    filter: none;
+    opacity: 1;
+}
+
+#q.show{
+    opacity:0;
+}
+
+#q{
+    position:absolute;
+    color:white;
+    top:15vh;
+    font-size:8vh;
+    -webkit-text-stroke: 2px black;
+}
+
+input{
+    margin-top:25vh;
+    width:50vh;
+    font-size:larger;
+}
+
+.ui-autocomplete { max-height: 50vh; overflow-y: scroll; overflow-x: hidden;}
+.ui-dialog-titlebar{background-color:white; border:none;}
+
+table{
+    border: 1px solid black;
+    border-radius: 10px;
+    border-collapse: collapse;
+    width: clamp(50em, 50em, 75vw);
+    max-width:75vw;
+    height:10vh;
+    overflow:auto;
+}
+
+tr{
+    height:10px;
+    border-bottom:1px solid black;
+    font-size:1rem;
+}
+
+.num{
+    width:1em;
+    padding:10px;
+    font-weight:600;
+}
+
+.pokeimg{
+    width:4em;
+    padding:.5em;
+}
+
+.pokeimg > img{
+    width: 3em;
+    margin-right:5vw;
+}
+
+.name{
+    text-transform:capitalize;
+}
+
+.poketype b{
+    padding:5px;
+    border-radius:5px;
+    font-size:small;
+    color:white;
+}
+
+.wrapper > p{
+    width:100vw;
+    text-align:center;
+}
+
+.link{
+    font-size:3vh;
+    background-color: white;
+    border: none;
+    cursor:pointer;
+    position:absolute;
+    color:grey;
+    text-decoration: underline;
+}
+
+.another{
+    bottom:1em;
+    right:1em;
+}
+
+.help{
+    bottom:1em;
+    left:1em;
+}
+
+.author{
+    top:1em;
+    left:1em;
+    font-size:small;
+    text-decoration: none;
+}
+
+.another:hover{
+    color:black;
+}
+
+
+
+.incorrect{
+    color: red;
+}
+
+.correct{
+    color:green;
+}
+
+.almost{
+    color: orange;
+}
+
+.incorrect.poketype > *{
+    background-color: red;
+}
+
+.correct.poketype > *{
+    background-color: green;
+}
+
+.almost.poketype > *{
+    background-color: orange;
+}
